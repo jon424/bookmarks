@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+  }
+  
+  .container {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 150px auto;
+    grid-gap: 30px
+  }
+  
+  .toc {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    
+    > ul {
+      padding: 0;
+      list-style: none;
+    }
+    
+    a {
+      display: block;
+      padding: 3px;
+      transition: background ease 0.2s, color ease 0.2s;
+    }
+  }
+  
+  .is-active {
+    background-color: #cf1259;
+    color: white;
+    text-decoration: none;
+  }

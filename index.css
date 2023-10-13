@@ -1,38 +1,56 @@
+:root {
+  --main-bg-color: #f0e4c5;
+  --primary: #7e969e;
+  --primary: #7090a3;
+  --heading-font-fam: "Outfit", sans-serif;
+  --p-font-fam: "Zilla Slab", serif;
+}
+
 body {
-    font-family: 'Open Sans', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+p {
+  font-family: var(--p-font-fam);
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+  font-family: var(--heading-font-fam);
+  font-weight: 900;
+}
+
+.container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 150px auto;
+  grid-gap: 30px;
+}
+
+.toc {
+  position: sticky;
+  top: 0;
+  align-self: start;
+
+  > ul {
+    padding: 0;
+    list-style: none;
   }
-  
-  h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+
+  a {
+    display: block;
+    font-family: var(--p-font-fam);
+    font-size: 18px;
+    padding: 3px;
+    transition: background ease 0.2s, color ease 0.2s;
   }
-  
-  .container {
-    display: grid;
-    padding: 10px;
-    grid-template-columns: 150px auto;
-    grid-gap: 30px
-  }
-  
-  .toc {
-    position: sticky;
-    top: 0;
-    align-self: start;
-    
-    > ul {
-      padding: 0;
-      list-style: none;
-    }
-    
-    a {
-      display: block;
-      padding: 3px;
-      transition: background ease 0.2s, color ease 0.2s;
-    }
-  }
-  
-  .is-active {
-    background-color: #cf1259;
-    color: white;
-    text-decoration: none;
-  }
+}
+
+.is-active {
+  background-color: #cf1259;
+  color: white;
+  text-decoration: none;
+}

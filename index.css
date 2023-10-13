@@ -15,6 +15,11 @@ a {
   font-family: var(--p-font-fam);
   font-size: 18px;
   line-height: 1.6;
+  max-width: 35%;
+}
+
+.toc-heading {
+  max-width: unset;
 }
 
 h1,

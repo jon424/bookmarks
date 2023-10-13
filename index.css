@@ -10,9 +10,11 @@ body {
   background-color: var(--main-bg-color);
 }
 
-p {
+p,
+a {
   font-family: var(--p-font-fam);
   font-size: 18px;
+  line-height: 1.6;
 }
 
 h1,
@@ -42,15 +44,13 @@ h3 {
 
   a {
     display: block;
-    font-family: var(--p-font-fam);
-    font-size: 18px;
-    padding: 3px;
     transition: background ease 0.2s, color ease 0.2s;
   }
 }
 
 .is-active {
-  background-color: #cf1259;
+  background-color: #a30c00;
   color: white;
+  font-weight: 400;
   text-decoration: none;
 }

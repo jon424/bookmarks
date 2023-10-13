@@ -24,7 +24,7 @@ a {
 
 h1,
 h2,
-h3 {
+.toc-heading {
   color: var(--primary);
   font-family: var(--heading-font-fam);
   font-weight: 900;
